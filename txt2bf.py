@@ -5,9 +5,9 @@
 
 from sys import argv, stdout
 
-fin = open(argv[1], "rU", buffering = 256)
+fin = open(argv[1], "rU", buffering = 1024)
 
-fout = open(argv[1][:-4]+".bf", "w", buffering = 1024)
+fout = open(argv[1][:-4]+".bf", "w", buffering = 1024*1024)
 
 charCount = 0
 
